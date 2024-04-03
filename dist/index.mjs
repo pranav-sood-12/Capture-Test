@@ -50,7 +50,7 @@ function captureClick(element) {
 }
 
 // src/initialize.ts
-var initialize = (options) => {
+export default initialize = (options) => {
   console.log(`Capture initialized with API key: ${options.apiKey}`);
   if (options.clickIds) {
     options.clickIds.forEach((id) => {
@@ -371,6 +371,6 @@ function setNFAContainersStyles(containerDetails) {
   addNFAStyles(styles, nfaIdSelector);
 }
 export {
-  initialize,
+
   placeNFAsOnWebsite
 };
