@@ -12,7 +12,7 @@ import { captureSessionReplay } from "./metrics/sessionReplay";
 import { captureUserEngagement } from "./metrics/userEngagement";
 import type { InitializationOptions } from "./types";
 
-export const initialize = (options: InitializationOptions) => {
+export function initialize (options: InitializationOptions) {
   console.log(`Capture initialized with API key: ${options.apiKey}`);
 
   // Initialize click tracking for dynamic elements

@@ -50,7 +50,7 @@ function captureClick(element) {
 }
 
 // src/initialize.ts
-export default initialize = (options) => {
+export default function initialize(options) {
   console.log(`Capture initialized with API key: ${options.apiKey}`);
   if (options.clickIds) {
     options.clickIds.forEach((id) => {
@@ -60,7 +60,7 @@ export default initialize = (options) => {
       }
     });
   }
-};
+}
 
 // src/utils/addNFAStyles.ts
 function addNFAStyles(cssRule, selector) {
@@ -371,6 +371,6 @@ function setNFAContainersStyles(containerDetails) {
   addNFAStyles(styles, nfaIdSelector);
 }
 export {
-
+  
   placeNFAsOnWebsite
 };

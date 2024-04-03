@@ -77,7 +77,7 @@ function captureClick(element) {
 }
 
 // src/initialize.ts
-var initialize = (options) => {
+function initialize(options) {
   console.log(`Capture initialized with API key: ${options.apiKey}`);
   if (options.clickIds) {
     options.clickIds.forEach((id) => {
@@ -87,7 +87,7 @@ var initialize = (options) => {
       }
     });
   }
-};
+}
 
 // src/utils/addNFAStyles.ts
 function addNFAStyles(cssRule, selector) {

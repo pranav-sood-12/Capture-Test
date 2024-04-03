@@ -14,7 +14,7 @@ interface NFAContainersDetails {
     footer?: boolean;
 }
 
-declare const initialize: (options: InitializationOptions) => void;
+declare function initialize(options: InitializationOptions): void;
 
 declare function placeNFAsOnWebsite(containerDetails: NFAContainersDetails[]): Promise<void>;
 
