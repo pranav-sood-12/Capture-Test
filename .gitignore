@@ -1,0 +1,38 @@
+# .gitignore
+
+# Node modules
+node_modules/
+
+
+# test files
+test/
+
+# Log files
+*.log
+
+# Environment files
+.env
+
+# IDE-specific settings
+.idea/
+.vscode/
+*.iml
+
+# macOS files
+.DS_Store
+
+# Temporary files
+*.tmp
+*.swp
+
+# Other
+*.bak
+*.cache
+*.gz
+*.tgz
+
+# Package lock files (Uncomment if you prefer to not commit lock files)
+# package-lock.json
+# yarn.lock
+
+# End of .gitignore
